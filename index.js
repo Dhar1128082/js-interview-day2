@@ -6,8 +6,8 @@
 //With the call() method, you can write a method that can be used on different objects.
 //Eg: 
 const person = {
-    firstName: "Cirigiri",
-    lastName: "Girishma",
+    firstName: "krishna",
+    lastName: "pandey",
     fullName: function () {
         return this.firstName + " " + this.lastName;
     }
@@ -25,8 +25,8 @@ const person1 = {
 }
 
 const person12 = {
-    firstName: "Girishma",
-    lastName: "Cirigiri"
+    firstName: "krishna",
+    lastName: "pandey"
 }
 
 person1.fullName.apply(person12);
@@ -36,16 +36,16 @@ person1.fullName.apply(person12);
 //Bind returns a new function, allowing you to pass in a this array and any number of arguments.
 //Eg:
 const person3 = {
-    firstName: "Girishma",
-    lastName: "Cirigiri",
+    firstName: "rahul",
+    lastName: "rawat",
     fullName: function () {
         return this.firstName + " " + this.lastName;
     }
 }
 
 const member = {
-    firstName: "Ciri",
-    lastName: "Harika",
+    firstName: "rohan",
+    lastName: "singh",
 }
 
 let fullName = person3.fullName.bind(member);
@@ -64,8 +64,8 @@ The key of a property can be a `string`. And the value of a property can be any 
 */
 // Eg :
 let oneObj = {
-    firstName: "Girishma",
-    lastName: "Cirigiri",
+    firstName: "krishankant",
+    lastName: "nagila",
 };
 
 
@@ -84,8 +84,8 @@ let oneObj = {
 
 // constructor function
 function Person() {
-    this.name = 'Girishma',
-        this.age = 23,
+    this.name = 'piyush',
+        this.age = 25,
 
         this.greet = function () {
             console.log('hello');
@@ -107,7 +107,7 @@ console.log(person2.name);
 
 // 4. Explain prototypes
 /*
-When a function is created in JavaScript, the JavaScript engine adds a prototype property to the function. This prototype property is an object (called a prototype object) that has a constructor property by default. The constructor property points back to the function on which prototype object is a property. We can access the function’s prototype property using functionName.prototype.
+When a function is created in JavaScript, the JavaScript engine adds a prototype property to the function. This prototype property is an object (called a prototype object) that has a constructor property by default. The constructor property points back to the function on which prototype object is a property. We can access the functionâ€™s prototype property using functionName.prototype.
 */
 
 function ptype(firstName, lastName) {
@@ -118,7 +118,7 @@ function ptype(firstName, lastName) {
         });
 }
 
-let personp = new ptype("Girishma", "Cirigiri");
+let personp = new ptype("rahul", "singh");
 
 console.log(personp);
 
@@ -133,7 +133,7 @@ console.log(personp);
 // If a prototype value is changed, then all the new objects will have the changed property value. All the previously created objects will have the previous value.
 // constructor function Eg:
 function Person() {
-    this.name = "Girishma";
+    this.name = "Rahul";
 }
 
 Person.prototype.age = 23;
@@ -174,8 +174,8 @@ function Developer(name, age, gender, id, specialization) {
 }
 
 // Creating objects
-let Employee1 = new Employee("Girishma", 23, "Feale", 123);
-let Developer1 = new Developer("Cirigiri", 33, "Female", 345,
+let Employee1 = new Employee("krishan", 23, "male", 123);
+let Developer1 = new Developer("sikha", 21, "female", 345,
     "Frontend Developer");
 console.log(Employee1);
 console.log(Developer1);
@@ -200,7 +200,7 @@ function callMe() {
 }
 
 // passing function as an argument
-greeting("Cirigiri", callMe);
+greeting("dharam", callMe);
 
 
 
@@ -212,7 +212,7 @@ greeting("Cirigiri", callMe);
 // The setTimeout() method executes a block of code after the specified time. The method executes the code only once.
 // program to display a text using setTimeout method
 function greeting() {
-    console.log("Hello Girishma");
+    console.log("Hello world");
 }
 
 setTimeout(greeting, 3000);
